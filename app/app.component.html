@@ -1,0 +1,26 @@
+
+  <!--<label for="Firstname">Firstname</label>
+  <input type="firstname" id = 'fname' name = "fname"><br>
+  <label for="Lastname">Firstname</label>
+  <input type="Lastname" id = 'lname' name = "lname"><br>
+  <label for="Email">Email</label>
+  <input type="Email" id = 'Email' name = "Email"><br>
+  <button>submit</button> -->
+
+
+  <table>
+    <tr>
+      <td>Firstname</td>
+      <td>LastName</td>
+      <td>Email</td>
+    </tr>
+
+
+    <tr *ngFor = "let item of addUser" >
+      <td>{{item.fname}}</td>
+      <td>{{item.lname}}</td>
+      <td>{{item.email}}</td>
+
+    </tr>
+  </table>
+
